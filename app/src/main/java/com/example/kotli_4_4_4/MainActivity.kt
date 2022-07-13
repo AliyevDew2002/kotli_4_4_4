@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
             var data:Intent?=result.data
 
-            var member: Member? =data?.getParcelableExtra("member")
+            var member=data?.getSerializableExtra("member")
 
             Log.d(TAG,member.toString()!!)
 
@@ -54,5 +54,4 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("user",user)
         detailLauncher.launch(intent)
     }
-
 }

@@ -26,7 +26,7 @@ class MainActivity2 : AppCompatActivity() {
 
         var main_text2=findViewById<TextView>(R.id.main2_text)
 
-        var user: User? =intent.getParcelableExtra("user")
+        var user=intent.getSerializableExtra("user")
 
         Log.d(TAG,user.toString()!!)
 
